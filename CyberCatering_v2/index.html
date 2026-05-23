@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Полезная Бакалея Андрея</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html" class="header__logo-link">
+        <img src="assets/img/logo.png" alt="Healthy Skill Logo" class="header__logo-img">
+      </a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+        <li class="header__item"><a href="#" class="header__link">О сайте</a></li>
+        <li class="header__item"><a href="#" class="header__link">ТГ автора</a></li>
+        <li class="header__item"><a href="#" class="header__link">Прикол</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="inventory">
+    <h1 class="inventory__title">Полезная Бакалея Андрея</h1>
+
+    <div class="inventory__grid">
+      
+      <article class="inventory-card">
+        <img src="assets/img/buckwheat.jpg" alt="Гречка" class="inventory-card__image">
+        <div class="inventory-card__main">
+          <h2 class="inventory-card__title">Гречневая крупа</h2>
+          <p class="inventory-card__price">Цена: 0 тенге</p>
+          <button class="inventory-card_price--btnprice">Узнать цену</button>
+          <ul class="inventory-card__stats">
+            <li class="inventory-card__stat"><span class="js-proteins">12.6</span>г белки</li>
+            <li class="inventory-card__stat"><span class="js-fats">3</span>г жиры</li>
+            <li class="inventory-card__stat"><span class="js-carbs">60</span>г Углеводы</li>
+            <li class="inventory-card__stat inventory-card__result">Итого: 0 ккал</li>
+          </ul>
+          <div class="inventory-card__energy">
+            <div class="inventory-card__energy-bar"></div>
+          </div>
+        </div>
+        <div class="inventory-card__actions">
+          <div class="inventory-card__controls">
+            <input type="number" class="inventory-card__input" value="100">
+            <span class="inventory-card__label">Грамм</span>
+          </div>
+          <div class="inventory-card__btn-group">
+            <button class="inventory-card__btn inventory-card__btn--add">Добавить</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="inventory-card">
+        <img src="assets/img/rice.jpg" alt="Рис" class="inventory-card__image">
+        <div class="inventory-card__main">
+          <h2 class="inventory-card__title">Рис белый</h2>
+          <p class="inventory-card__price">Цена: 0 тенге</p>
+          <button class="inventory-card_price--btnprice">Узнать цену</button>
+          <ul class="inventory-card__stats">
+            <li class="inventory-card__stat"><span class="js-proteins">6.5</span>г белки</li>
+            <li class="inventory-card__stat"><span class="js-fats">0.8</span>г жиры</li>
+            <li class="inventory-card__stat"><span class="js-carbs">77</span>г Углеводы</li>
+            <li class="inventory-card__stat inventory-card__result">Итого: 0 ккал</li>
+          </ul>
+          <div class="inventory-card__energy">
+            <div class="inventory-card__energy-bar"></div>
+          </div>
+        </div>
+        <div class="inventory-card__actions">
+          <div class="inventory-card__controls">
+            <input type="number" class="inventory-card__input" value="100">
+            <span class="inventory-card__label">Грамм</span>
+          </div>
+          <div class="inventory-card__btn-group">
+            <button class="inventory-card__btn inventory-card__btn--add">Добавить</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="inventory-card">
+        <img src="assets/img/oatmeal.jpg" alt="Овсяные хлопья" class="inventory-card__image">
+        <div class="inventory-card__main">
+          <h2 class="inventory-card__title">Овсяные хлопья</h2>
+          <p class="inventory-card__price">Цена: 0 тенге</p>
+          <button class="inventory-card_price--btnprice">Узнать цену</button>
+          <ul class="inventory-card__stats">
+            <li class="inventory-card__stat"><span class="js-proteins">12</span>г белки</li>
+            <li class="inventory-card__stat"><span class="js-fats">6</span>г жиры</li>
+            <li class="inventory-card__stat"><span class="js-carbs">62</span>г Углеводы</li>
+            <li class="inventory-card__stat inventory-card__result">Итого: 0 ккал</li>
+          </ul>
+          <div class="inventory-card__energy">
+            <div class="inventory-card__energy-bar"></div>
+          </div>
+        </div>
+        <div class="inventory-card__actions">
+          <div class="inventory-card__controls">
+            <input type="number" class="inventory-card__input" value="100">
+            <span class="inventory-card__label">Грамм</span>
+          </div>
+          <div class="inventory-card__btn-group">
+            <button class="inventory-card__btn inventory-card__btn--add">Добавить</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <section class="daily-log">
+      <h2 class="inventory__title">Дневник питания</h2>
+      <div id="daily-list" class="daily-list"></div>
+      <div class="daily-total">
+        <p id="total-display">Общий итог за день: 0 ккал</p>
+        <button id="clear-all-btn" class="inventory-card__btn">Очистить всё</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="info-section">
+    <div class="info-panel">
+      <h2 class="info-section__main-title">Инфо-Центр</h2>
+      <article class="info-box" id="info-grechka">
+        <details class="info-box__details">
+          <summary class="info-box__summary">
+            <h3 class="info-box__title">Гречневая Крупа</h3>
+          </summary>
+          <div class="info-box__content">
+            <img class="info-box__img" src="assets/img/buckwheat.jpg" alt="Гречка">
+            <ul class="info-box__list">
+              <li><strong>До зала:</strong> Дает долгую энергию, не перегружает желудок.</li>
+              <li><strong>После зала:</strong> Помогает восполнить гликоген и восстановить мышцы.</li>
+              <li><strong>Плюсы/Минусы:</strong> Много белка и железа, но может надоесть.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+    </div>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
